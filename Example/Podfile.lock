@@ -1,0 +1,14 @@
+PODS:
+  - AWBanner (0.1.0)
+
+DEPENDENCIES:
+  - AWBanner (from `../`)
+
+EXTERNAL SOURCES:
+  AWBanner:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AWBanner: 7ede0c8f8fcb082c58496a1087475e697f24169e
+
+COCOAPODS: 0.38.2
