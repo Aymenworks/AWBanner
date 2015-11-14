@@ -33,7 +33,7 @@ To dismiss the banner before the time elapse, the user can tap it.
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/AWBanner.swift'
   s.resource_bundles = {
     'AWBanner' => ['Pod/Assets/*.png']
   }

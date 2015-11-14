@@ -11,14 +11,15 @@ import UIKit
 // MARK: - Banner Properties -
 
 private var originY: CGFloat = 0.0
-private struct AWBannerProperties {
+
+struct AWBannerProperties {
   static let height: CGFloat    = 40.0
   static let width: CGFloat     = UIScreen.mainScreen().bounds.width
 }
 
 // MARK: - Banner View -
 
-class AWBannerView: UIView {
+public class AWBannerView: UIView {
   
   var notificationLabel: UILabel!
   
@@ -29,7 +30,7 @@ class AWBannerView: UIView {
     self.setup()
   }
   
-  required init?(coder aDecoder: NSCoder) {
+  public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
@@ -53,11 +54,11 @@ class AWBannerView: UIView {
   }
 }
 
-struct AWBanner {
+public class AWBanner {
   
   private static let notificationView = AWBannerView()
   
-  static func showWithDuration(duration: NSTimeInterval, delay: NSTimeInterval, message: String, backgroundColor: UIColor, textColor: UIColor, originY y: CGFloat = originY) {
+  public static func showWithDuration(duration: NSTimeInterval, delay: NSTimeInterval, message: String, backgroundColor: UIColor, textColor: UIColor, originY y: CGFloat = originY) {
     
     guard let window = UIApplication.sharedApplication().delegate?.window where window != nil else {
       return
