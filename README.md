@@ -7,6 +7,8 @@ An easy, customizable and soft swift banner notification for iOS applications.
 [![Platform](https://img.shields.io/cocoapods/p/AWBanner.svg?style=flat)](http://cocoapods.org/pods/AWBanner)
 [![License](https://img.shields.io/cocoapods/l/AWBanner.svg?style=flat)](http://cocoapods.org/pods/AWBanner)
 
+<img src="Screenshots/GifBanner.gif" width = "250"/>
+
 An easy, customizable and soft swift banner notification for iOS applications.
 AWBanner library provides an easy to use class to show a banner view on the screen ( wherever you want, you can specify the Y origin ).
 
@@ -21,7 +23,7 @@ guard ios >= 7 else { return }
 
 ## Installation
 
-### Cocoapods 
+### Cocoapods
 
 AWBanner is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
@@ -33,9 +35,9 @@ pod "AWBanner"
 
 Simply drag and drop the `AWBANNER.swift` file to your project.
 
-## Usage 
+## Usage
 
-To show the banner, use the following code : 
+To show the banner, use the following code :
 
 ```swift
 
@@ -46,7 +48,7 @@ backgroundColor: ThemeManager.currentTheme.mainColor,
 textColor: UIColor.whiteColor())
 }
 
-// Or if you want to choose where it comes from, add the last parameter yOrigin, like : 
+// Or if you want to choose where it comes from, add the last parameter yOrigin, like :
 
 AWBanner.showWithDuration(2.5,
 delay: 0.0,
