@@ -80,7 +80,7 @@ public class AWBanner {
     }
   }
   
-  private static func hide() {
+  public static func hide() {
     UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .CurveLinear, animations: {
       self.notificationView.notificationLabel.text = " "
       self.notificationView.frame = CGRect(x: 0.0, y: originY, width: AWBannerProperties.width, height: 0.0)
