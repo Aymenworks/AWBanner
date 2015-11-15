@@ -12,14 +12,14 @@ import UIKit
 
 private var originY: CGFloat = 0.0
 
-struct AWBannerProperties {
+private struct AWBannerProperties {
   static let height: CGFloat    = 40.0
   static let width: CGFloat     = UIScreen.mainScreen().bounds.width
 }
 
 // MARK: - Banner View -
 
-public class AWBannerView: UIView {
+private class AWBannerView: UIView {
   
   var notificationLabel: UILabel!
   
@@ -30,7 +30,7 @@ public class AWBannerView: UIView {
     self.setup()
   }
   
-  public required init?(coder aDecoder: NSCoder) {
+  required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   

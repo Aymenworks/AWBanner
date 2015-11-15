@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "AWBanner"
-  s.version          = "0.1.0"
+  s.version          = "0.1.2"
   s.summary          = 'An easy, customizable and soft Swift banner notification for iOS applications.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ To dismiss the banner before the time elapse, the user can tap it.
   s.license          = 'MIT'
   s.author           = { "Rebouh Aymen" => "aymenmse@gmail.com" }
   s.source           = { :git => "https://github.com/Aymenworks/AWBanner.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/aymenworks'
+  s.social_media_url = 'https://twitter.com/aymenworks'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
