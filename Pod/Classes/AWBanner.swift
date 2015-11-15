@@ -54,11 +54,11 @@ class AWBannerView: UIView {
   }
 }
 
-class AWBanner {
+public class AWBanner {
   
   private static let notificationView = AWBannerView()
   
-  static func showWithDuration(duration: NSTimeInterval, delay: NSTimeInterval, message: String, backgroundColor: UIColor, textColor: UIColor, originY y: CGFloat = originY) {
+  public static func showWithDuration(duration: NSTimeInterval, delay: NSTimeInterval, message: String, backgroundColor: UIColor, textColor: UIColor, originY y: CGFloat = originY) {
     
     guard let window = UIApplication.sharedApplication().delegate?.window where window != nil else {
       return
