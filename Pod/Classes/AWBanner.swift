@@ -19,7 +19,7 @@ private struct AWBannerProperties {
 
 // MARK: - Banner View -
 
-private class AWBannerView: UIView {
+class AWBannerView: UIView {
   
   var notificationLabel: UILabel!
   
@@ -54,11 +54,11 @@ private class AWBannerView: UIView {
   }
 }
 
-public class AWBanner {
+class AWBanner {
   
   private static let notificationView = AWBannerView()
   
-  public static func showWithDuration(duration: NSTimeInterval, delay: NSTimeInterval, message: String, backgroundColor: UIColor, textColor: UIColor, originY y: CGFloat = originY) {
+  static func showWithDuration(duration: NSTimeInterval, delay: NSTimeInterval, message: String, backgroundColor: UIColor, textColor: UIColor, originY y: CGFloat = originY) {
     
     guard let window = UIApplication.sharedApplication().delegate?.window where window != nil else {
       return
