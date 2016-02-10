@@ -23,7 +23,7 @@ guard ios >= 7 else { return }
 
 ## Installation
 
-### Cocoapods
+### CocoaPods
 
 AWBanner is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
